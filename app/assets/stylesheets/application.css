@@ -13,3 +13,8 @@
  *= require_tree .
  *= require_self
  */
+
+ .checkbox {
+ 	margin-right:5px;
+ 	float: left;
+ }
