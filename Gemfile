@@ -44,3 +44,6 @@ gem 'faker'
 gem 'twitter-bootstrap-rails'
 gem 'less-rails'
 gem 'therubyracer'
+
+#password encryption
+gem 'bcrypt-ruby', '~> 3.1.2'
