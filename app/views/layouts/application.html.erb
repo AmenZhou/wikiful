@@ -14,7 +14,17 @@
 	  <div class="navbar-inner">
 	    <div class="container">
 	      <%= link_to "Wikiful", root_path, :class => "brand" %>
-	      <div style="float: right;">Eventually log in/out and sign up links will go here</div>
+	      <div class='session-controls'> 
+          <div class="btn-group">
+	          <% if current_user %>
+						  <%= link_to "Log Out", logout_path, :class => 'btn btn-primary btn-mini' %>
+						  	Logged in as <%= current_user.email %>.
+						<% else %>
+	            <%= link_to "Sign Up", signup_path, :class => "btn btn-mini" %>
+	            <%= link_to "Log In", login_path, :class => "btn btn-mini" %>
+	          <% end %>
+          </div>
+       </div>
 	    </div>
 	  </div>
 	</div>
